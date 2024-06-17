@@ -1,0 +1,39 @@
+{% extends '../layout.twig' %}
+
+{% block body %}
+
+
+	<div class="ui grid container-max">
+		<div class="row text-center">
+			<h1 class="text-center">Cadastrar</h1>
+		</div>
+		<div class="row">
+			<div class="column">
+				<form class="ui form" method="POST" action="/register">
+					<div class="field">
+						<label>Nome</label>
+						<input type="text" name="nome" placeholder="Seu nome">
+					</div>
+					<div class="field">
+						<label>Email</label>
+						<input type="text" name="email" placeholder="Seu email">
+					</div>
+					<div class="field">
+						<label>Password</label>
+						<input type="text" name="password" placeholder="Sua senha">
+					</div>
+					<button class="ui primary button" type="submit">Enviar</button>
+				</form>
+			</div>
+		</div>
+		<div class="row text-center">
+			<h1>Ou entre usando:</h1>
+		</div>
+		<div class="row text-center">
+				<script src="https://accounts.google.com/gsi/client" async></script>
+				<div id="g_id_onload" data-client_id="674623604667-hekjql86t3tr4e3404lf8ed1ehqic69p.apps.googleusercontent.com" data-login_uri="http://localhost:3000/login/google" data-auto_prompt="false"></div>
+				<div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left"></div>
+			</div>
+	</div>
+
+{% endblock %}

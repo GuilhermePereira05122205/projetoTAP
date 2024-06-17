@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<link rel='stylesheet' href='/stylesheets/style.css'/>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/semantic/semantic.min.css">
+	</head>
+	<body>
+  <div class="ui secondary  menu">
+    <a class="item" href="/">
+      home
+    </a>
+    <a class="item" href="/login">
+      Login
+    </a>
+    <a class="item" href="/register">
+      Register
+    </a>
+    <a class="item" href="/user">
+      User
+    </a>
+</div>
+		{% block body %}{% endblock %}
+	</body>
+</html>
